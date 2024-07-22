@@ -56,12 +56,16 @@ public class Multa {
     }
 
     private String validarTipo(String tipo) {
-        if ("LEVE".equals(tipo) || "MEDIO".equals(tipo) || "GRAVE".equals(tipo)) {
-            return tipo;
-        } else {
-            return "LEVE";
-        }
+    if ("LEVE".equalsIgnoreCase(tipo)) {
+        return "LEVE";
+    } else if ("MEDIO".equalsIgnoreCase(tipo)) {
+        return "MEDIO";
+    } else if ("GRAVE".equalsIgnoreCase(tipo)) {
+        return "GRAVE";
+    } else {
+        return "LEVE";
     }
+}
 
     private double calcularMontoPagar() {
         switch (tipo) {
