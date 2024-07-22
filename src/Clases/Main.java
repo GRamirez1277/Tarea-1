@@ -33,6 +33,7 @@ public class Main extends javax.swing.JFrame {
         infoMultas = new javax.swing.JButton();
         listarMultas = new javax.swing.JButton();
         pagarMulta = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         jButton5.setText("jButton1");
 
@@ -66,23 +67,29 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("Viner Hand ITC", 1, 36)); // NOI18N
+        jLabel4.setText("Multas");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(202, Short.MAX_VALUE)
+                .addContainerGap(181, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
                     .addComponent(pagarMulta, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(crearMulta, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(listarMultas, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(infoMultas, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(169, 169, 169))
+                .addGap(183, 183, 183))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(100, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(crearMulta, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pagarMulta, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,6 +268,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton crearMulta;
     private javax.swing.JButton infoMultas;
     private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton listarMultas;
     private javax.swing.JButton pagarMulta;
     // End of variables declaration//GEN-END:variables
